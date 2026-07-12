@@ -33,6 +33,33 @@ const services = [
   },
 ];
 
+const reasons = [
+  {
+    number: "01",
+    title: "Rapporto diretto",
+    description:
+      "Seguo personalmente il cliente dalla prima telefonata fino al completamento dell’intervento.",
+  },
+  {
+    number: "02",
+    title: "Tariffe chiare",
+    description:
+      "Le condizioni economiche vengono spiegate telefonicamente prima della conferma dell’uscita.",
+  },
+  {
+    number: "03",
+    title: "Ricerca del guasto",
+    description:
+      "L’intervento parte dalla verifica dell’impianto e dall’individuazione della causa del problema.",
+  },
+  {
+    number: "04",
+    title: "Sicurezza prima di tutto",
+    description:
+      "Quando la riparazione non può essere completata subito, la parte interessata viene messa in sicurezza quando possibile.",
+  },
+];
+
 const tariffs = [
   {
     title: "Orario ordinario",
@@ -51,6 +78,44 @@ const tariffs = [
     hours: "Tutti i giorni, 22:00–08:00 · Domeniche e festivi",
     firstHour: "140 €",
     nextTime: "40 €",
+  },
+];
+
+const faqs = [
+  {
+    question: "Quando inizia il conteggio del tempo?",
+    answer:
+      "Il conteggio inizia dal momento dell’arrivo presso il cliente e dall’avvio delle verifiche sull’impianto. Lo spostamento nella normale zona coperta dal servizio è già compreso nella tariffa iniziale.",
+  },
+  {
+    question: "Cosa succede se il guasto non viene risolto subito?",
+    answer:
+      "La tariffa iniziale resta dovuta perché comprende uscita, verifica, diagnosi e tempo lavorato. Se servono altri controlli, ricambi o un secondo intervento, il cliente viene informato prima di procedere.",
+  },
+  {
+    question: "Cosa succede se il ricambio non è disponibile?",
+    answer:
+      "Il primo intervento viene conteggiato normalmente. Quando il ricambio sarà disponibile, al rientro per completare lo stesso lavoro non viene applicato un nuovo diritto di chiamata: vengono conteggiati il tempo effettivo di lavoro e i materiali utilizzati.",
+  },
+  {
+    question: "I materiali sono compresi nelle tariffe?",
+    answer:
+      "No. Ricambi, componenti elettrici e altri materiali vengono conteggiati separatamente.",
+  },
+  {
+    question: "Parcheggi e zone blu sono compresi?",
+    answer:
+      "No. Eventuali parcheggi a pagamento, zone blu, pedaggi o accessi a pagamento sono a carico del cliente e vengono aggiunti in base al costo effettivamente sostenuto.",
+  },
+  {
+    question: "Il servizio notturno è sempre disponibile?",
+    answer:
+      "Il servizio notturno, domenicale e festivo viene effettuato su disponibilità e deve essere confermato telefonicamente.",
+  },
+  {
+    question: "Le tariffe valgono anche per i condomìni?",
+    answer:
+      "Sì, per guasti e interventi occasionali. Per la manutenzione elettrica ordinaria e programmata dei condomìni vengono invece concordate condizioni dedicate con l’amministratore.",
   },
 ];
 
@@ -81,16 +146,20 @@ export default function Home() {
               Servizi
             </a>
 
+            <a className="transition hover:text-yellow-400" href="#vantaggi">
+              Perché scegliermi
+            </a>
+
             <a className="transition hover:text-yellow-400" href="#tariffe">
               Tariffe
             </a>
 
-            <a className="transition hover:text-yellow-400" href="#chi-sono">
-              Chi sono
+            <a className="transition hover:text-yellow-400" href="#faq">
+              FAQ
             </a>
 
-            <a className="transition hover:text-yellow-400" href="#zone">
-              Zone servite
+            <a className="transition hover:text-yellow-400" href="#chi-sono">
+              Chi sono
             </a>
 
             <a
@@ -106,7 +175,7 @@ export default function Home() {
               Menu
             </summary>
 
-            <nav className="absolute right-0 mt-3 flex w-52 flex-col overflow-hidden rounded-2xl border border-white/10 bg-slate-900 shadow-2xl">
+            <nav className="absolute right-0 mt-3 flex w-56 flex-col overflow-hidden rounded-2xl border border-white/10 bg-slate-900 shadow-2xl">
               <a
                 className="border-b border-white/10 px-5 py-4 text-sm hover:bg-white/5"
                 href="#servizi"
@@ -116,9 +185,23 @@ export default function Home() {
 
               <a
                 className="border-b border-white/10 px-5 py-4 text-sm hover:bg-white/5"
+                href="#vantaggi"
+              >
+                Perché scegliermi
+              </a>
+
+              <a
+                className="border-b border-white/10 px-5 py-4 text-sm hover:bg-white/5"
                 href="#tariffe"
               >
                 Tariffe
+              </a>
+
+              <a
+                className="border-b border-white/10 px-5 py-4 text-sm hover:bg-white/5"
+                href="#faq"
+              >
+                Domande frequenti
               </a>
 
               <a
@@ -233,7 +316,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="servizi" className="mx-auto max-w-7xl px-4 py-16 sm:px-5 sm:py-20 lg:px-8">
+      <section
+        id="servizi"
+        className="mx-auto max-w-7xl px-4 py-16 sm:px-5 sm:py-20 lg:px-8"
+      >
         <div className="max-w-3xl">
           <p className="font-bold uppercase tracking-[0.2em] text-yellow-400">
             Servizi
@@ -267,7 +353,51 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-y border-white/10 bg-slate-900">
+      <section
+        id="vantaggi"
+        className="border-y border-white/10 bg-slate-900"
+      >
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-5 sm:py-20 lg:px-8">
+          <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr]">
+            <div>
+              <p className="font-bold uppercase tracking-[0.2em] text-yellow-400">
+                Perché scegliermi
+              </p>
+
+              <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+                Un servizio diretto, chiaro e concreto
+              </h2>
+
+              <p className="mt-5 text-lg leading-8 text-slate-300">
+                Ogni intervento viene seguito personalmente, spiegando al
+                cliente il problema individuato, le possibili soluzioni e i
+                costi previsti.
+              </p>
+            </div>
+
+            <div className="grid gap-5 sm:grid-cols-2">
+              {reasons.map((reason) => (
+                <article
+                  key={reason.number}
+                  className="rounded-2xl border border-white/10 bg-slate-950/60 p-6"
+                >
+                  <p className="text-sm font-black tracking-[0.2em] text-yellow-400">
+                    {reason.number}
+                  </p>
+
+                  <h3 className="mt-4 text-xl font-bold">{reason.title}</h3>
+
+                  <p className="mt-3 leading-7 text-slate-300">
+                    {reason.description}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/10 bg-slate-900">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-5 lg:grid-cols-[0.75fr_1.25fr] lg:px-8">
           <div className="rounded-3xl bg-white p-6 text-slate-950 sm:p-7">
             <div className="relative h-32 w-full overflow-hidden rounded-2xl border border-slate-200 bg-white">
@@ -310,7 +440,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="tariffe" className="mx-auto max-w-7xl px-4 py-16 sm:px-5 sm:py-20 lg:px-8">
+      <section
+        id="tariffe"
+        className="mx-auto max-w-7xl px-4 py-16 sm:px-5 sm:py-20 lg:px-8"
+      >
         <div className="max-w-3xl">
           <p className="font-bold uppercase tracking-[0.2em] text-yellow-400">
             Tariffe
@@ -415,7 +548,47 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="chi-sono" className="border-y border-white/10 bg-slate-900">
+      <section id="faq" className="border-y border-white/10 bg-slate-900">
+        <div className="mx-auto max-w-5xl px-4 py-16 sm:px-5 sm:py-20 lg:px-8">
+          <div className="text-center">
+            <p className="font-bold uppercase tracking-[0.2em] text-yellow-400">
+              Domande frequenti
+            </p>
+
+            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+              Informazioni prima dell’intervento
+            </h2>
+
+            <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-300">
+              Le principali condizioni vengono comunque spiegate
+              telefonicamente prima della conferma dell’uscita.
+            </p>
+          </div>
+
+          <div className="mt-12 space-y-4">
+            {faqs.map((faq) => (
+              <details
+                key={faq.question}
+                className="group rounded-2xl border border-white/10 bg-slate-950/60 open:border-yellow-400/40"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-5 px-6 py-5 font-bold">
+                  <span>{faq.question}</span>
+
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-yellow-400/40 text-xl text-yellow-400 transition group-open:rotate-45">
+                    +
+                  </span>
+                </summary>
+
+                <div className="border-t border-white/10 px-6 py-5 leading-7 text-slate-300">
+                  {faq.answer}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="chi-sono">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-5 sm:py-20 lg:grid-cols-2 lg:px-8">
           <div>
             <p className="font-bold uppercase tracking-[0.2em] text-yellow-400">
@@ -452,7 +625,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="zone" className="mx-auto max-w-7xl px-4 py-16 sm:px-5 sm:py-20 lg:px-8">
+      <section
+        id="zone"
+        className="mx-auto max-w-7xl px-4 pb-16 sm:px-5 sm:pb-20 lg:px-8"
+      >
         <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-7 sm:p-8 lg:p-12">
           <p className="font-bold uppercase tracking-[0.2em] text-yellow-400">
             Zone servite
@@ -467,6 +643,30 @@ export default function Home() {
             Garda e nei comuni limitrofi. Per località più lontane, eventuali
             costi di trasferta vengono comunicati prima dell’intervento.
           </p>
+        </div>
+      </section>
+
+      <section className="border-t border-white/10 bg-slate-900">
+        <div className="mx-auto max-w-7xl px-4 py-14 text-center sm:px-5 lg:px-8">
+          <p className="font-bold uppercase tracking-[0.2em] text-yellow-400">
+            Hai bisogno di assistenza?
+          </p>
+
+          <h2 className="mx-auto mt-3 max-w-3xl text-3xl font-black sm:text-4xl">
+            Hai un guasto o devi modificare un impianto elettrico?
+          </h2>
+
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-300">
+            Contattami per descrivere il problema e verificare la disponibilità
+            dell’intervento.
+          </p>
+
+          <a
+            href="#contatti"
+            className="mt-8 inline-flex rounded-xl bg-yellow-400 px-7 py-4 font-bold text-slate-950 transition hover:bg-yellow-300"
+          >
+            Vai ai contatti
+          </a>
         </div>
       </section>
 
