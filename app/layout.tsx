@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://angeloboattaimpianti.it"),
   title: {
-    default: "Angelo Boatta Impianti Elettrici",
-    template: "%s | Angelo Boatta Impianti Elettrici",
+    default: "A.B Impianti di Boatta Angelo",
+    template: "%s | A.B Impianti di Boatta Angelo",
   },
   description:
     "Impianti elettrici civili e industriali, pronto intervento, ricerca guasti, manutenzione, domotica KNX e videosorveglianza a Mori, Rovereto e zone limitrofe.",
@@ -18,11 +19,11 @@ export const metadata: Metadata = {
     "manutenzione elettrica condomini",
     "domotica KNX",
     "videosorveglianza",
-    "Angelo Boatta Impianti Elettrici",
+    "A.B Impianti di Boatta Angelo",
   ],
-  authors: [{ name: "Angelo Boatta Impianti Elettrici" }],
-  creator: "Angelo Boatta Impianti Elettrici",
-  publisher: "Angelo Boatta Impianti Elettrici",
+  authors: [{ name: "A.B Impianti di Boatta Angelo" }],
+  creator: "A.B Impianti di Boatta Angelo",
+  publisher: "A.B Impianti di Boatta Angelo",
   robots: {
     index: true,
     follow: true,
@@ -30,8 +31,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "it_IT",
-    siteName: "Angelo Boatta Impianti Elettrici",
-    title: "Angelo Boatta Impianti Elettrici",
+    siteName: "A.B Impianti di Boatta Angelo",
+    title: "A.B Impianti di Boatta Angelo",
     description:
       "Impianti elettrici civili e industriali, pronto intervento, ricerca guasti, manutenzione, domotica KNX e videosorveglianza.",
   },

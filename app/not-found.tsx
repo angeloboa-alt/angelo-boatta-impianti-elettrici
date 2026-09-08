@@ -34,7 +34,7 @@ export default function NotFound() {
         </div>
 
         <div className="mt-10 border-t border-white/10 pt-6">
-          <p className="font-semibold">Angelo Boatta Impianti Elettrici</p>
+          <p className="font-semibold">A.B Impianti di Boatta Angelo</p>
           <p className="mt-1 text-sm text-slate-400">
             Impianti elettrici civili e industriali
           </p>

@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.angeloboattaimpiantielettrici.it/sitemap.xml",
+    sitemap: "https://angeloboattaimpianti.it/sitemap.xml",
   };
 }
