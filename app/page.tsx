@@ -263,24 +263,65 @@ export default function Home() {
             <h2>Angelo Boatta</h2>
 
             <p>
-              Il mio percorso nel settore elettrico nasce sul campo, tra cantieri,
-              manutenzioni, ricerca guasti e impianti civili e industriali. Anni di
-              esperienza mi hanno permesso di conoscere situazioni molto diverse tra
-              loro e di sviluppare un metodo di lavoro basato su attenzione,
-              precisione e concretezza.
+              Angelo Boatta ha completato i suoi studi presso il <strong>CRST di Palermo</strong>,
+              dove ha acquisito le basi tecniche che gli hanno permesso di iniziare il proprio
+              percorso nel settore elettrico. Dopo la formazione ha lavorato con diverse aziende,
+              maturando fin dai primi anni un’esperienza concreta fatta di cantieri, installazioni,
+              manutenzioni e interventi su impianti differenti.
             </p>
 
             <p>
-              Con il tempo ho capito che fare bene questo mestiere non significa
-              soltanto installare o riparare un impianto. Significa saper individuare
-              un problema, comprenderne la causa, proporre una soluzione adeguata e
-              realizzare il lavoro con cura, senza trascurare sicurezza e affidabilità.
+              Fino al <strong>2007</strong> ha svolto la propria attività professionale in Sicilia,
+              collaborando con più realtà del settore. Il confronto con aziende e contesti diversi
+              gli ha permesso di sviluppare competenze pratiche, metodo di lavoro e capacità di
+              adattamento alle diverse esigenze dei cantieri.
             </p>
 
             <p>
-              Da questo percorso nasce <strong>A.B Impianti di Boatta Angelo</strong>:
-              un’attività costruita sull’esperienza maturata negli anni e sulla volontà
-              di offrire un servizio professionale, chiaro e concreto.
+              Nel <strong>2007 si è trasferito in Trentino</strong>, dove ha continuato a lavorare
+              per aziende del settore elettrico, proseguendo il proprio percorso professionale e
+              ampliando ulteriormente le competenze maturate negli anni. Ha avuto modo di operare
+              sia nell’ambito civile sia in quello industriale, lavorando in abitazioni, attività
+              commerciali, laboratori e realtà produttive.
+            </p>
+
+            <p>
+              Nel corso della sua esperienza si è occupato di nuove installazioni, modifiche e
+              ampliamenti di impianti esistenti, manutenzioni, ricerca guasti, quadri elettrici,
+              linee di distribuzione, videosorveglianza e sistemi di automazione.
+            </p>
+
+            <p>
+              Con il tempo ha sviluppato un approccio molto pratico al lavoro: comprendere prima
+              di tutto il problema o l’esigenza del cliente, individuarne le cause e valutare la
+              soluzione più adatta prima di procedere con l’intervento. Per Angelo un impianto non
+              deve semplicemente funzionare, ma deve essere realizzato con attenzione alla
+              <strong> sicurezza, all’affidabilità e alla durata nel tempo</strong>.
+            </p>
+
+            <p>
+              Negli anni ha inoltre approfondito il mondo dei sistemi <strong>KNX</strong>, applicati
+              all’automazione degli edifici e alla gestione integrata di funzioni come illuminazione,
+              tapparelle, climatizzazione e altri impianti.
+            </p>
+
+            <p>
+              L’esperienza accumulata lavorando per diverse aziende e in contesti differenti lo ha
+              portato infine a creare <strong>A.B Impianti di Boatta Angelo</strong>, mettendo
+              direttamente a disposizione dei clienti le competenze maturate sul campo.
+            </p>
+
+            <p>
+              L’attività nasce con un obiettivo preciso: offrire un servizio professionale, diretto
+              e concreto, basato sulla chiarezza, sulla qualità del lavoro e su un rapporto semplice
+              con il cliente. Ogni intervento viene valutato in base alle reali necessità, cercando
+              di proporre soluzioni adeguate senza complicazioni inutili.
+            </p>
+
+            <p>
+              Che si tratti di un nuovo impianto, di una ristrutturazione, di una modifica, di una
+              manutenzione o di una ricerca guasti, il principio rimane lo stesso:
+              <strong> lavorare con precisione, in sicurezza e con attenzione al risultato finale</strong>.
             </p>
           </div>
 
