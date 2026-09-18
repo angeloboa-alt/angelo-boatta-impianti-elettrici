@@ -42,14 +42,14 @@ button, input, textarea { font: inherit; }
 }
 .brand-logo {
   position: relative;
-  width: 176px;
-  height: 62px;
+  width: 190px;
+  height: 64px;
   background: #fff;
-  border-radius: 2px;
+  border-radius: 10px;
   overflow: hidden;
 }
 .brand-logo img {
-  padding: 8px 14px !important;
+  padding: 2px 4px !important;
   object-fit: contain !important;
 }
 .desktop-nav {
@@ -302,7 +302,14 @@ button, input, textarea { font: inherit; }
 @media (max-width: 680px) {
   .wrap { width:min(100% - 28px,1180px); }
   .header-inner { min-height:72px; }
-  .brand-logo { width:145px; height:52px; }
+  .brand-logo {
+  position: relative;
+  width: 190px;
+  height: 64px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
   .hero { min-height:640px; }
   .hero-image img { object-position: 70% center; }
   .hero-overlay { background:linear-gradient(90deg,rgba(3,14,26,.98),rgba(3,14,26,.78)),linear-gradient(180deg,transparent,rgba(3,14,26,.72)); }
@@ -669,16 +676,16 @@ body {
 }
 
 .brand-logo {
-  width: 176px;
-  height: 62px;
+  position: relative;
+  width: 190px;
+  height: 64px;
   background: #fff;
   border-radius: 10px;
-  border: 1px solid rgba(15,23,42,.08);
-  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+  overflow: hidden;
 }
 
 .brand-logo img {
-  padding: 8px 14px !important;
+  padding: 2px 4px !important;
   object-fit: contain !important;
 }
 
@@ -884,9 +891,13 @@ body {
   }
 
   .brand-logo {
-    width: 148px;
-    height: 52px;
-  }
+  position: relative;
+  width: 190px;
+  height: 64px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
   .hero {
     min-height: 620px;
@@ -911,5 +922,5 @@ body {
 }
 
 .header-inner .brand-logo {
-  overflow: visible;
+  overflow: hidden;
 }
