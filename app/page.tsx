@@ -58,12 +58,15 @@ export default function Home() {
       <header className="site-header">
         <div className="wrap header-inner">
           <a href="#home" className="brand" aria-label="A.B Impianti di Boatta Angelo">
-            <div className="brand-mark">
-              <div className="brand-ab">
-                A.B<span>ϟ</span>
-              </div>
-              <div className="brand-name">IMPIANTI</div>
-              <div className="brand-owner">DI BOATTA ANGELO</div>
+            <div className="brand-logo">
+              <Image
+                src="/logo-angelo-boatta.png"
+                alt="A.B Impianti di Boatta Angelo"
+                fill
+                priority
+                className="object-contain"
+                sizes="176px"
+              />
             </div>
           </a>
 
@@ -129,7 +132,7 @@ export default function Home() {
         <div className="wrap service-strip-grid">
           {["Impianti civili","Impianti industriali","Manutenzioni","Ricerca guasti","Sistemi KNX","Videosorveglianza"].map((item, i) => (
             <div className="strip-item" key={item}>
-              <span className="strip-icon">{["⌂","▥","⚙","⌕","◇","◉"][i]}</span>
+              <span className="strip-icon">{["CI","IN","MT","RG","KNX","TV"][i]}</span>
               <strong>{item}</strong>
             </div>
           ))}
@@ -178,10 +181,10 @@ export default function Home() {
             <h2>Un partner affidabile<br />per i tuoi impianti</h2>
 
             <div className="benefits">
-              <div><span>✓</span><strong>Esperienza sul campo</strong></div>
-              <div><span>◇</span><strong>Qualità del lavoro</strong></div>
-              <div><span>◎</span><strong>Soluzioni su misura</strong></div>
-              <div><span>ϟ</span><strong>Attenzione alla sicurezza</strong></div>
+              <div><span>01</span><strong>Esperienza sul campo</strong></div>
+              <div><span>02</span><strong>Qualità del lavoro</strong></div>
+              <div><span>03</span><strong>Soluzioni su misura</strong></div>
+              <div><span>04</span><strong>Attenzione alla sicurezza</strong></div>
             </div>
           </div>
         </div>
@@ -318,12 +321,14 @@ export default function Home() {
       <footer className="site-footer">
         <div className="wrap footer-top">
           <div className="footer-brand">
-            <div className="brand-mark footer-brand-mark">
-              <div className="brand-ab">
-                A.B<span>ϟ</span>
-              </div>
-              <div className="brand-name">IMPIANTI</div>
-              <div className="brand-owner">DI BOATTA ANGELO</div>
+            <div className="brand-logo footer-logo">
+              <Image
+                src="/logo-angelo-boatta.png"
+                alt="A.B Impianti di Boatta Angelo"
+                fill
+                className="object-contain"
+                sizes="155px"
+              />
             </div>
           </div>
           <nav>
