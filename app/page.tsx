@@ -1,4 +1,14 @@
 import Image from "next/image";
+import { House, Factory, Wrench, Search, Network, Camera } from "lucide-react";
+
+const serviceIcons = [
+  House,
+  Factory,
+  Wrench,
+  Search,
+  Network,
+  Camera,
+];
 
 const services = [
   {
@@ -132,7 +142,14 @@ export default function Home() {
         <div className="wrap service-strip-grid">
           {["Impianti civili","Impianti industriali","Manutenzioni","Ricerca guasti","Sistemi KNX","Videosorveglianza"].map((item, i) => (
             <div className="strip-item" key={item}>
-              <span className="strip-icon">{["CI","IN","MT","RG","KNX","TV"][i]}</span>
+              {(() => {
+  const Icon = serviceIcons[i];
+  return (
+    <span className="strip-icon" aria-hidden="true">
+      <Icon size={27} strokeWidth={1.8} />
+    </span>
+  );
+})()}
               <strong>{item}</strong>
             </div>
           ))}
