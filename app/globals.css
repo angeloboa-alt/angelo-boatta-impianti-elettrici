@@ -48,7 +48,10 @@ button, input, textarea { font: inherit; }
   border-radius: 2px;
   overflow: hidden;
 }
-.brand-logo img { padding: 4px 8px !important; }
+.brand-logo img {
+  padding: 8px 14px !important;
+  object-fit: contain !important;
+}
 .desktop-nav {
   display: flex;
   justify-content: center;
@@ -675,7 +678,8 @@ body {
 }
 
 .brand-logo img {
-  padding: 5px 10px !important;
+  padding: 8px 14px !important;
+  object-fit: contain !important;
 }
 
 .desktop-nav {
@@ -904,4 +908,8 @@ body {
     width: 150px;
     height: 55px;
   }
+}
+
+.header-inner .brand-logo {
+  overflow: visible;
 }
