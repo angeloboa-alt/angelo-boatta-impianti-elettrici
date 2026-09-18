@@ -49,8 +49,9 @@ button, input, textarea { font: inherit; }
   overflow: hidden;
 }
 .brand-logo img {
-  padding: 2px 4px !important;
+  padding: 0 !important;
   object-fit: contain !important;
+  transform: scale(1.22);
 }
 .desktop-nav {
   display: flex;
@@ -685,8 +686,9 @@ body {
 }
 
 .brand-logo img {
-  padding: 2px 4px !important;
+  padding: 0 !important;
   object-fit: contain !important;
+  transform: scale(1.22);
 }
 
 .desktop-nav {
